@@ -12,13 +12,13 @@
     {% for card in cards %}
 
     <div class="card border-card">
-        <h5>Cours régulier de </h5>
-        <h6>Prochains cours:</h6>
+        <h5>Cours régulier de {{ card.class }}</h5>
+        <h6>Prochains cours: {{ card.nextClass }}</h6>
         <ul>
-            <li><img><p></p></li>
-            <li><img><p></p><p>À partir du</p></li>
-            <li><img><p></p><p></p>À partir de</li>
-            <li><img><p></p></li>
+            <li><img><p>{{ card.student }}</p></li>
+            <li><img><p>{{ card.day }}</p><p>À partir du {{ card.limiteDateStart }}</p></li>
+            <li><img><p>{{ card.hours }} / par jour</p><p>À partir de {{ card.limiteHourStart }}</p></li>
+            <li><img><p>{{ card.teacher }}</p></li>
         </ul>
         <div>
         <button>Détails</button>
