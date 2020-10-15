@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mes cours{% endblock %}
+
+{% block body %}
+
+<div>
+    <div>
+        <h4>Prochain cours: le 23 décembre</h4>
+    </div>
+
+    {% for classe in classes %}
+
+    <div class="card border-card">
+        <h5></h5>
+        <h6></h6>
+        <ul>
+            <li><img><p></p></li>
+            <li><img><p></p><p></p></li>
+            <li><img><p></p><p></p></li>
+            <li><img><p></p></li>
+        </ul>
+        <div>
+        <button>Détails</button>
+        </div>
+    </div>
+
+    {% endfor %}
+
+</div>>
+
+{% endblock %}
