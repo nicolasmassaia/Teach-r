@@ -6,18 +6,18 @@
 
 <div>
     <div>
-        <h4>Prochain cours: le 23 décembre</h4>
+        <h4>Prochain cours: </h4>
     </div>
 
-    {% for classe in classes %}
+    {% for card in cards %}
 
     <div class="card border-card">
-        <h5></h5>
-        <h6></h6>
+        <h5>Cours régulier de </h5>
+        <h6>Prochains cours:</h6>
         <ul>
             <li><img><p></p></li>
-            <li><img><p></p><p></p></li>
-            <li><img><p></p><p></p></li>
+            <li><img><p></p><p>À partir du</p></li>
+            <li><img><p></p><p></p>À partir de</li>
             <li><img><p></p></li>
         </ul>
         <div>
@@ -27,6 +27,6 @@
 
     {% endfor %}
 
-</div>>
+</div>
 
 {% endblock %}
